@@ -21,7 +21,7 @@ public class Formatters {
         }
         log.info("Duration(ms): {}", duration);
         Date date = new Date(duration);
-        DateFormat formatter = new SimpleDateFormat("HH:mm:ss.SSS");
+        DateFormat formatter = new SimpleDateFormat("HH:mm:ss");
         formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
         String time = formatter.format(date);
         log.info("Formatted time: {}", time);
